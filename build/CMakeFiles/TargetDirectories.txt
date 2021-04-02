@@ -1,0 +1,3 @@
+/home/scratchdragon105/Projects/C and C++/dungeon/build/CMakeFiles/rebuild_cache.dir
+/home/scratchdragon105/Projects/C and C++/dungeon/build/CMakeFiles/framework.dir
+/home/scratchdragon105/Projects/C and C++/dungeon/build/CMakeFiles/edit_cache.dir

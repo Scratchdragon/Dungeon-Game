@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/scratchdragon105/Projects/C and C++/dungeon/graphics_s.hpp
+stdlib.h
+-
+SDL2/SDL.h
+-
+
+/home/scratchdragon105/Projects/C and C++/dungeon/input.hpp
+unistd.h
+-
+termios.h
+-
+thread
+-
+
+/home/scratchdragon105/Projects/C and C++/dungeon/main.cpp
+stdlib.h
+-
+graphics_s.hpp
+/home/scratchdragon105/Projects/C and C++/dungeon/graphics_s.hpp
+SDL2/SDL.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+unistd.h
+-
+input.hpp
+/home/scratchdragon105/Projects/C and C++/dungeon/input.hpp
+iostream
+-
+
