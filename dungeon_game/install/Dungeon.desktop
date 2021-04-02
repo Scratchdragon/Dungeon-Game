@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Dungeon
+Comment=A rougelike dungeon-crawler made in c++
+Icon=/home/pi/Downloads/dungeon_game/icon.bmp
+Path=/home/pi/Downloads/dungeon_game/
+Exec=bash dungeon.sh
+Type=Application
+Encoding=UTF-8
+Terminal=false
+Categories=Games
+Comment[en_NZ]=A rougelike dungeon-crawler made in c++
