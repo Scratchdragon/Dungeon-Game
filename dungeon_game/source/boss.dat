@@ -1,0 +1,74 @@
+int bossX = 0;
+int bossY = 0;
+int bossID = 0;
+int bossHP = 1;
+
+void createBoss(int bossId, int bossSpawnY, int bossSpawnX) {
+  bossX = bossSpawnX;
+  bossY = bossSpawnY;
+  bossID = bossId;
+  bossHP = 10;
+}
+void damageCloseBoss(int damage) {
+  if (distance(bossY,bossX,playerY,playerX) < 1) {
+    printf("\033[0;35m");
+    printf(">#");
+    std::cout << (char(damage + 48));
+    printf("#< ");
+    bossHP = bossHP - damage;
+    printf("\033[0m");
+    if (bossHP < 1) {
+      map[bossY][bossX] = 0;
+      bossX = 0;
+      bossY = 0;
+    }
+    return;
+  }
+}
+void renderBoss() {
+  if (bossID == 1) {
+    map[bossY][bossX] = 15;
+    if (distance(bossY,bossX,playerY,playerX) < 1) {
+      generate_random(0,3,1);
+      printf("\033[0;31m");
+      printf("+{!");
+      std::cout << (char(rand_num + 48));
+      printf("+");
+      Health = Health - rand_num;
+      generate_random(0,3,1);
+      std::cout << (char(rand_num + 48));
+      Health = Health - rand_num;
+      printf("+");
+      generate_random(0,3,1);
+      std::cout << (char(rand_num + 48));
+      printf("!}+ ");
+      Health = Health - rand_num;
+    }
+    else if (distance(bossY,bossX,playerY,playerX) < 6) {
+      printf("\033[0;35m");
+      printf("! ");
+      map[bossY][bossX] = 0;
+      if (bossX < playerX) {
+        if (map[bossY][bossX + 1] == 0) {
+          bossX = bossX + 1;
+        }
+      }
+      if (bossX > playerX) {
+        if (map[bossY][bossX - 1] == 0) {
+          bossX = bossX - 1;
+        }
+      }
+      if (bossY < playerY) {
+        if (map[bossY + 1][bossX] == 0) {
+          bossY = bossY + 1;
+        }
+      }
+      if (bossY > playerY) {
+        if (map[bossY - 1][bossX] == 0) {
+          bossY = bossY - 1;
+        }
+      }
+      map[bossY][bossX] = 15;
+    }
+  }
+}
