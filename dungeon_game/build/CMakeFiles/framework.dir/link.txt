@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++14 -g  -rdynamic CMakeFiles/framework.dir/main.cpp.o  -o framework  -lSDL2 

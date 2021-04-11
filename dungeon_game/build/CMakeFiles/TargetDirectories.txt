@@ -1,3 +1,0 @@
-/home/pi/Downloads/dungeon_game/build/CMakeFiles/rebuild_cache.dir
-/home/pi/Downloads/dungeon_game/build/CMakeFiles/framework.dir
-/home/pi/Downloads/dungeon_game/build/CMakeFiles/edit_cache.dir
