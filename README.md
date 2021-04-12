@@ -12,4 +12,4 @@ Navigate to the "dungeon_game" directory and cd into it\
 From there run the following commands in sequence\
 rm -r build\
 sudo apt install g++; sudo apt install libsdl2-dev libsdl2-2.0-0 -y; sudo apt install make; sudo apt install cmake; mkdir build/; cd build/; cmake ../; make\
-cd -; sudo chmod +x dungeon.sh; g++ -o Dungeon run.cpp; sudo chmod +x shortcut.sh; ./shortcut.sh\
+cd -; sudo chmod +x dungeon.sh; g++ -o Dungeon run.cpp; sudo chmod +x shortcut.sh; ./shortcut.sh
